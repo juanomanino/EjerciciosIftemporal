@@ -1,18 +1,28 @@
-"""Ejercicio 1:
-Programa para verificar si una persona es mayor de edad"""
+"""Ejercicio 9:
+Programa que lea dos números enteros y averigüe si el uno es múltiplo del otro"""
 
 
 print("-------------------------------")
-print("----MAYOR DE EDAD -------------")
+print("------------MULTIPLOS----------")
 print("-------------------------------")
 
 
 # input
-edad=int(input("Digite su edad: "))
+a=int(input("Ingrese el valor del primer entero: "))
+b=int(input("Ingrese el valor del segundo entero: "))
+
 
 #processing
-
-if edad>=18:
-    print("La persona es MAYOR DE EDAD")
+if a>b:
+    x=a/b
+    if (int(x)==x):
+      print("El numero "+str(a)+" es múltiplo del número "+str(b))
+    else:
+      print("El numero "+str(a)+" NO es múltiplo del número "+str(b))
 else:
-    print("La persona es MENOR DE EDAD")
+    x=b/a
+    if (int(x)==x):
+        print("El numero "+str(b)+" es múltiplo del número "+str(a))
+    else:
+     print("El numero "+str(b)+" NO es múltiplo del número "+str(a))
+
